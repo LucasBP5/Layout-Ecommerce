@@ -614,3 +614,172 @@ footer {
 .social a{
     margin-right: 30px;
 }
+
+.menuMobile{
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    border: 0.5px solid #171717;
+    border-radius: 3px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.mm_line{
+    height: 3px;
+    background-color: #171717;
+}
+
+.logo_mobile{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .item1 img,
+    .item2 img,
+    .item3 img,
+    .item4 img {
+        width: 200px;
+        margin: 30px;
+    }
+
+    .itemshopping{
+        display: flex;
+        justify-content: center;
+    }
+
+    .item5 img,
+    .item6 img,
+    .item7 img,
+    .item8 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 30px;
+    }
+
+    .behind_img img{
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px){
+    nav a{
+        margin: 15px;
+    }
+
+    .descricaoanuncio{
+        margin-left: 20px;
+    }
+    
+    .nav1bot,
+    .nav2bot {
+        font-size: 12px;
+    }
+
+    #search{
+        width: 100px;
+    }
+
+    .navbar{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .valorcarrinho{
+        font-size: 10px;
+    }
+
+    .item1 img,
+    .item2 img,
+    .item3 img,
+    .item4 img {
+        width: 140px;
+        margin: 30px;
+    }
+
+    .itemshopping{
+        display: flex;
+        justify-content: center;
+    }
+
+    .item5 img,
+    .item6 img,
+    .item7 img,
+    .item8 img {
+        width: 140px;
+        height: 200px;
+        object-fit: cover;
+        margin: 30px;
+    }
+
+    .behind_img img{
+        width: 500px;
+    }
+
+    .subscribe{
+        flex-direction: column;
+    }
+
+    .subscribe p{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    input[type=email] {
+        margin-bottom: 15px;
+    }
+
+    .descricao_collection{
+        margin-left: 15px;
+    }
+
+    .botoes_collection{
+        margin-right: 15px;
+    }
+
+    .behind_img img{
+        width: 400px;
+    }
+
+    .links,
+    .shopping_links,
+    .contact {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 600px){
+
+    .menuMobile{
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navegacao{
+        flex-direction: column;
+        display: none;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding-inline-start: 0;
+    }
+
+    .navegacao img{
+        display: none;
+    }
+
+    .logo_mobile{
+        display: flex;
+        margin-right: 80px;
+    }
+}

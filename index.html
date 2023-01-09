@@ -9,6 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".navegacao").style.display == 'flex') {
+                    document.querySelector(".navegacao").style.display = 'none';
+                } else {
+                    document.querySelector(".navegacao").style.display = 'flex';
+                }
+            });
+        };    
+    </script>
 </head>
 <body>
     <header>
@@ -27,6 +38,12 @@
         </div>
     </header>
     <nav>
+        <div class="menuMobile">
+            <div class="mm_line"></div>
+            <div class="mm_line"></div>
+            <div class="mm_line"></div>
+        </div>
+        <div class="logo_mobile"><img src="imagens/logo.png" alt="logo" width="270px"></div>
         <div class="navegacao">
             <a href="">Woman</a>
             <a href="">Men</a>
