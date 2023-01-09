@@ -508,3 +508,33 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright img{
+    margin-top: 20px;
+}
+
+.copyright_desc{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.copyright_desc2{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.copyright_desc2 p{
+    display: inline;
+}
