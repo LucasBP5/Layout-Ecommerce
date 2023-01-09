@@ -55,6 +55,12 @@ nav{
     align-items: center;
 }
 
+.navegacao2{
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+}
+
 nav a{
     text-decoration: none;
     color: black;
@@ -615,14 +621,18 @@ footer {
     margin-right: 30px;
 }
 
+.container_mobile{
+    display: flex;
+    justify-content: space-between;
+}
+
 .menuMobile{
     display: none;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 20px;
-    border: 0.5px solid #171717;
     border-radius: 3px;
     padding: 10px;
     justify-content: center;
@@ -634,6 +644,10 @@ footer {
 }
 
 .logo_mobile{
+    display: none;
+}
+
+.navegacao2{
     display: none;
 }
 
@@ -753,7 +767,10 @@ footer {
 }
 
 @media(max-width: 600px){
-
+    .container_mobile{
+        display: flex;
+        flex-direction: column;
+    }
     .menuMobile{
         margin-left: 25px;
         display: flex;
@@ -763,23 +780,49 @@ footer {
 
     nav{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
+
     .navegacao{
-        flex-direction: column;
         display: none;
+    }
+
+    .navegacao2{
+        display: none;
+        flex-direction: column;
+        position: absolute;
         left: 0;
+        top: 150px;
         width: 100%;
-        background-color: white;
+        background-color: #292929;
         padding-inline-start: 0;
     }
 
-    .navegacao img{
-        display: none;
+    .navegacao2 a {
+        color: white;
     }
 
     .logo_mobile{
         display: flex;
-        margin-right: 80px;
+        justify-content: center;
+
+    }
+
+    header .nav1{
+        display: none;
+    }
+
+    .cabecalho{
+        justify-content: flex-end;
+    }
+
+    .descricaoanuncio h2{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .anuncio button{
+        margin-bottom: 15px;
     }
 }

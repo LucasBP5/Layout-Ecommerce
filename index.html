@@ -12,10 +12,10 @@
     <script type="text/javascript">
         window.onload = function (){
             document.querySelector(".menuMobile").addEventListener("click", function(){
-                if(document.querySelector(".navegacao").style.display == 'flex') {
-                    document.querySelector(".navegacao").style.display = 'none';
+                if(document.querySelector(".navegacao2").style.display == 'flex') {
+                    document.querySelector(".navegacao2").style.display = 'none';
                 } else {
-                    document.querySelector(".navegacao").style.display = 'flex';
+                    document.querySelector(".navegacao2").style.display = 'flex';
                 }
             });
         };    
@@ -37,13 +37,26 @@
             </div>
         </div>
     </header>
-    <nav>
+    <div class="container_mobile">
+        <nav>
         <div class="menuMobile">
             <div class="mm_line"></div>
             <div class="mm_line"></div>
             <div class="mm_line"></div>
         </div>
-        <div class="logo_mobile"><img src="imagens/logo.png" alt="logo" width="270px"></div>
+        <div class="logo_mobile"><img src="imagens/logo.png" alt="logo" width="280px"></div>
+        <div class="navegacao2">
+            <a href="">Woman</a>
+            <a href="">Men</a>
+            <a href="">Children</a>
+            <a href="">Collection</a>
+            <a href="">Spring</a>
+            <a href="">Summer</a>
+            <a href="">Fall</a>
+            <a href="">Winter</a>
+        </div></nav>
+    </div>
+    <nav>
         <div class="navegacao">
             <a href="">Woman</a>
             <a href="">Men</a>
