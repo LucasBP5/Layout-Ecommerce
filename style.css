@@ -473,6 +473,8 @@ input[type=email]::placeholder{
 }
 
 .behind_img{
+    position: relative;
+    bottom: -4px;
     width: 570px;
     margin-bottom: 0;
 }
@@ -509,6 +511,12 @@ footer {
     align-items: center;
 }
 
+.rodape {
+    display: flex;
+    flex-direction: row;
+    max-width: 1170px;
+}
+
 .copyright {
     display: flex;
     flex-direction: column;
@@ -522,7 +530,7 @@ footer {
     margin-top: 20px;
     color: white;
     font-family: 'Lora', serif;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 28px;
 }
 
@@ -530,11 +538,79 @@ footer {
     margin-top: 20px;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 28px;
     margin-bottom: 20px;
 }
 
 .copyright_desc2 p{
     display: inline;
+}
+
+.links {
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 35px;
+}
+
+.links h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.shopping_links{
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping_links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 35px;
+}
+
+.shopping_links h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact {
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.email {
+    border: 1px solid #d3995f;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social a{
+    margin-right: 30px;
 }
