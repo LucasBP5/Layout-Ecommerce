@@ -18,7 +18,7 @@
                     document.querySelector(".navegacao2").style.display = 'flex';
                 }
             });
-        };    
+        };      
     </script>
 </head>
 <body>
@@ -38,7 +38,7 @@
         </div>
     </header>
     <div class="container_mobile">
-        <nav>
+        <nav id="navmobile">
         <div class="menuMobile">
             <div class="mm_line"></div>
             <div class="mm_line"></div>
@@ -99,6 +99,17 @@
                 <a id="menupessoal" href="">Wish List(7)</a>
                 <a id="menupessoal" href="">Checkout</a>
                 <a id="menupessoal" href="">My Account</a>
+                <div class="menuMobile2">
+                    <div class="mm_line2"></div>
+                    <div class="mm_line2"></div>
+                    <div class="mm_line2"></div>
+                </div>
+                <div class="navbotMobile">
+                    <a id="menupessoal" href="">Shopping Cart</a>
+                    <a id="menupessoal" href="">Wish List(7)</a>
+                    <a id="menupessoal" href="">Checkout</a>
+                    <a id="menupessoal" href="">My Account</a>
+                </div>
                 <input id="search" type="text" placeholder="Search"><a id="lupa" href=""><img id="lupaimg" src="imagens/lupa.png" alt="lupa"></a>
                 <a id="imagemcarrinho" href=""><img id="carrinho" src="imagens/carrinho.png" alt="carrinho"></a><div class="valorcarrinho">R$ 79,00</div>
         </div>
@@ -109,8 +120,8 @@
         <div class="shoppping">
             <div class="popular_title"><h1>Popular Now</h1></div>
                 <div class="popular_menu">
-                    <nav>
-                    <div class="navegacao">
+                    <nav id="navpopular">
+                    <div class="navegacao_popular">
                         <a href="">Trending</a>
                         <a href="">Bestsellers</a>
                         <a href="">New</a>

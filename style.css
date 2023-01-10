@@ -55,6 +55,12 @@ nav{
     align-items: center;
 }
 
+.navegacao_popular{
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+}
+
 .navegacao2{
     max-width: 1050px;
     display: flex;
@@ -643,6 +649,27 @@ footer {
     background-color: #171717;
 }
 
+.menuMobile2{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.navbotMobile{
+    display: none;
+}
+
+.mm_line2{
+    height: 3px;
+    background-color: white;
+}
+
 .logo_mobile{
     display: none;
 }
@@ -778,7 +805,13 @@ footer {
         justify-content:space-around;
     }
 
-    nav{
+    .menuMobile2{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+    #navmobile{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -824,5 +857,97 @@ footer {
 
     .anuncio button{
         margin-bottom: 15px;
+    }
+
+    #menupessoal{
+        display: none;
+    }
+
+    .navbotMobile{
+        display: none;
+    }
+
+    .itemshopping{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6,
+    .item7,
+    .item8{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item1 img,
+    .item2 img,
+    .item3 img,
+    .item4 img,
+    .item5 img,
+    .item6 img,
+    .item7 img,
+    .item8 img {
+        width: 300px;
+        margin: 30px;
+    }
+
+    #navpopular{
+        justify-content: center;
+    }
+
+    .popular_desc{
+        font-size: 15px;
+    }
+
+    .from_collection{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .behind{
+        flex-direction: column;
+    }
+
+    .behind_desc{
+            align-items: center;
+    }
+
+    .behind_img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .behind_img img{
+        width: 100%;
+    }
+
+    .rodape{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 425px) {
+    .nav2 a{
+        margin-left: 30px;
+    }
+
+    .anuncio h1{
+        font-size: 20px;
+    }
+
+    .imagemanuncio img{
+        display: none;
+    }
+
+    .descricaoanuncio h2{
+        font-size: 10px;
     }
 }
